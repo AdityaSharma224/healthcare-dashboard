@@ -4,7 +4,7 @@ import Human from "../../assets/human.png";
 
 const AnatomySection = () => {
   return (
-    <div className={styles.anatomySection}>
+    <div className={styles.anatomySection} style={{backgroundColor:'#ECF3FE'}}>
       <div className={styles.anatomyContent}>
         <div className={styles.humanBody}>
           <img

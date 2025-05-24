@@ -37,19 +37,19 @@ const CalendarView = () => {
       <div className={styles.todayAppointments}>
         <div className={`${styles.appointmentCard} ${styles.dentistCard}`}>
           <div className={styles.appointmentHeader}>
-            <User className={styles.appointmentIcon} />
-            <span className={styles.appointmentType}>{'Dentist'}</span>
+            <User className={styles.appointmentIcon} style={{color:'#fff'}}/>
+            <span >{'Dentist'}</span>
           </div>
-          <div className={styles.appointmentTime}>{'09:00-11:00'}</div>
+          <div style={{color:'#fff', fontSize:'0.80rem', fontWeight:500}}>{'09:00-11:00'}</div>
           <div className={styles.doctorName}>{'Dr Cameron Williamson'}</div>
         </div>
         <div className={`${styles.appointmentCard} ${styles.physioCard}`}>
           <div className={styles.appointmentHeader}>
             <Activity className={styles.appointmentIcon} />
-            <span className={styles.appointmentType}>{'Physiotherapy Appointment'}</span>
+            <span  style={{color:'#000', fontSize:'0.80rem', fontWeight:500}}>{'Physiotherapy Appointment'}</span>
           </div>
-          <div className={styles.appointmentTime}>{'11:00-12:00'}</div>
-          <div className={styles.doctorName}>{'Dr Kevin Djeres'}</div>
+          <div style={{color:'#000', fontSize:'0.80rem', fontWeight:500}}>{'11:00-12:00'}</div>
+          <div className={styles.doctorName} style={{color:'#000'}}>{'Dr Kevin Djeres'}</div>
         </div>
       </div>
     </div>

@@ -42,6 +42,7 @@
 
 .anatomyContent {
   position: relative;
+  background-color: #ECF3FE;
   width: 100%;
   max-width: 500px;
   max-height: 80vh; /* Constrain overall height to 80% of viewport */
@@ -167,11 +168,10 @@
 }
 
 .healthCard {
-  background: white;
+  background: #ECF3FE;
   border-radius: 12px;
   padding: 16px;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-  border: 1px solid #e5e7eb;
 }
 
 .healthCardHeader {
@@ -236,7 +236,6 @@
   border-radius: 12px;
   padding: 24px;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-  border: 1px solid #e5e7eb;
   grid-column: span 4 / span 4;
 }
 
@@ -313,8 +312,6 @@
 
 .appointmentTime {
   font-size: 0.75rem;
-  background-color: #dbeafe;
-  color: #2563eb;
   padding: 2px 8px;
   border-radius: 4px;
 }
@@ -333,11 +330,11 @@
 }
 
 .dentistCard {
-  background-color: #2563eb;
+  background-color: #3734A9;
 }
 
 .physioCard {
-  background-color: #fb923c;
+  background-color: #DDE2FB;
 }
 
 .appointmentHeader {
@@ -350,6 +347,7 @@
 .appointmentIcon {
   width: 16px;
   height: 16px;
+  
 }
 
 .appointmentType {
@@ -372,7 +370,6 @@
   border-radius: 12px;
   padding: 24px;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-  border: 1px solid #e5e7eb;
   grid-column: span 6 / span 6;
 }
 
@@ -403,7 +400,7 @@
 .simpleAppointmentCard {
   padding: 16px;
   border-radius: 12px;
-  background-color: #f3e8ff;
+  background-color: #DDE2FB;
 }
 
 .appointmentContent {
@@ -436,7 +433,6 @@
   border-radius: 12px;
   padding: 24px;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-  border: 1px solid #e5e7eb;
   grid-column: span 6 / span 6;
 }
 
