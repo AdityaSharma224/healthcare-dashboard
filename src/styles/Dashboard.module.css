@@ -32,33 +32,38 @@
 
 /* Anatomy Section */
 .anatomySection {
-  position: relative;
-  background: linear-gradient(135deg, #eff6ff 0%, #ecfeff 100%);
-  border-radius: 16px;
-  padding: 32px;
-  height: 384px;
-  grid-column: span 5 / span 5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  height: 500px;
+  grid-column: span 4 / span 5;
 }
 
 .anatomyContent {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  max-height: 80vh; /* Constrain overall height to 80% of viewport */
+  overflow: hidden;
 }
-
 .humanBody {
   position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.bodyShape {
-  width: 192px;
-  height: 320px;
-  background: linear-gradient(180deg, #fca5a5 0%, #f87171 100%);
-  border-radius: 50%;
-  position: relative;
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+.humanImage {
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  object-fit: contain; /* Ensures image stays within bounds */
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 .bodyPart {
@@ -181,23 +186,15 @@
   border-radius: 8px;
 }
 
-.healthIconHealthy {
-  background-color: #dcfce7;
-}
-
-.healthIconIssue {
-  background-color: #fee2e2;
-}
-
 .iconHealthy {
-  width: 20px;
-  height: 20px;
+  width: 60px;
+  height: 60px;
   color: #16a34a;
 }
 
 .iconIssue {
-  width: 20px;
-  height: 20px;
+  width: 60px;
+  height: 60px;
   color: #dc2626;
 }
 
@@ -290,6 +287,9 @@
 
 .dayColumn {
   text-align: center;
+  background-color: #ecf3fe;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 .dayLabel {
@@ -484,19 +484,19 @@
   .anatomySection {
     grid-column: span 12 / span 12;
   }
-  
+
   .healthStatusCards {
     grid-column: span 12 / span 12;
   }
-  
+
   .calendarView {
     grid-column: span 12 / span 12;
   }
-  
+
   .upcomingSchedule {
     grid-column: span 12 / span 12;
   }
-  
+
   .activityFeed {
     grid-column: span 12 / span 12;
   }

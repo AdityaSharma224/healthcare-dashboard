@@ -1,23 +1,25 @@
-import { Heart, User, Activity } from 'lucide-react';
+import Lungs from "../assets/lungs.png"
+import Tooth from '../assets/tooth.png'
+import Zeroa from '../assets/Zeroa.png'
 
 export const healthStatusData = [
   {
     organ: 'Lungs',
-    icon: Heart,
-    status: 'healthy',
+    icon: Lungs,
+    status: 'issue',
     date: 'Tue, 26 Oct 2021',
     progress: 85
   },
   {
     organ: 'Teeth',
-    icon: User,
-    status: 'issue',
+    icon: Tooth,
+    status: 'healthy',
     date: 'Tue, 26 Oct 2021',
     progress: 60
   },
   {
     organ: 'Bone',
-    icon: Activity,
+    icon: Zeroa,
     status: 'issue',
     date: 'Tue, 26 Oct 2021',
     progress: 70

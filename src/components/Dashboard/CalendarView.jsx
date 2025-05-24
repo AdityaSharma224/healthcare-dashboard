@@ -38,18 +38,18 @@ const CalendarView = () => {
         <div className={`${styles.appointmentCard} ${styles.dentistCard}`}>
           <div className={styles.appointmentHeader}>
             <User className={styles.appointmentIcon} />
-            <span className={styles.appointmentType}>Dentist</span>
+            <span className={styles.appointmentType}>{'Dentist'}</span>
           </div>
-          <div className={styles.appointmentTime}>09:00-11:00</div>
-          <div className={styles.doctorName}>Dr Cameron Williamson</div>
+          <div className={styles.appointmentTime}>{'09:00-11:00'}</div>
+          <div className={styles.doctorName}>{'Dr Cameron Williamson'}</div>
         </div>
         <div className={`${styles.appointmentCard} ${styles.physioCard}`}>
           <div className={styles.appointmentHeader}>
             <Activity className={styles.appointmentIcon} />
-            <span className={styles.appointmentType}>Physiotherapy Appointment</span>
+            <span className={styles.appointmentType}>{'Physiotherapy Appointment'}</span>
           </div>
-          <div className={styles.appointmentTime}>11:00-12:00</div>
-          <div className={styles.doctorName}>Dr Kevin Djeres</div>
+          <div className={styles.appointmentTime}>{'11:00-12:00'}</div>
+          <div className={styles.doctorName}>{'Dr Kevin Djeres'}</div>
         </div>
       </div>
     </div>

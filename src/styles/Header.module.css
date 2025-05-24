@@ -27,6 +27,7 @@
 
 .searchContainer {
   position: relative;
+  display: flex;
 }
 
 .searchIcon {
@@ -65,8 +66,10 @@
 .notificationIcon {
   width: 20px;
   height: 20px;
-  color: #4b5563;
+  color: #1b4580;
   cursor: pointer;
+  align-self: center;
+  justify-self: center;
 }
 
 .avatar {

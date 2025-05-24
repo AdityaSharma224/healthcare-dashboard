@@ -6,7 +6,7 @@ import styles from '../../styles/Dashboard.module.css';
 const UpcomingSchedule = () => {
   return (
     <div className={styles.upcomingSchedule}>
-      <h2 className={styles.scheduleTitle}>The Upcoming Schedule</h2>
+      <h2 className={styles.scheduleTitle}>{'The Upcoming Schedule'}</h2>
       
       {upcomingAppointments.map((dayData, index) => (
         <div key={index} className={styles.daySection}>

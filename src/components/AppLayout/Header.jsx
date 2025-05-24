@@ -1,6 +1,7 @@
 import React from 'react';
 import { Search, Bell, Plus, User } from 'lucide-react';
 import styles from '../../styles/Header.module.css';
+import Notification from '../../assets/notification-bell.png'
 
 const Header = () => {
   return (
@@ -13,10 +14,11 @@ const Header = () => {
             placeholder="Search"
             className={styles.searchInput}
           />
+          <img src={Notification} className={styles.notificationIcon} />
         </div>
       </div>
       <div className={styles.rightSection}>
-        <Bell className={styles.notificationIcon} />
+        
         <div className={styles.avatar}>
           <User className={styles.avatarIcon} />
         </div>

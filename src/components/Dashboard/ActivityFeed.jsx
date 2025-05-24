@@ -7,8 +7,10 @@ const ActivityFeed = () => {
   
   return (
     <div className={styles.activityFeed}>
-      <h2 className={styles.activityTitle}>Activity</h2>
-      <p className={styles.activitySubtitle}>3 appointments on this week</p>
+      <h2 className={styles.activityTitle}>
+        {'Activity'}
+      </h2>
+      <p className={styles.activitySubtitle}>{'3 appointments on this week'}</p>
       
       <div className={styles.chartContainer}>
         {activityData.map((item, index) => (

@@ -1,36 +1,19 @@
-import React from 'react';
-import styles from '../../styles/Dashboard.module.css';
+import React from "react";
+import styles from "../../styles/Dashboard.module.css";
+import Human from "../../assets/human.png";
 
 const AnatomySection = () => {
   return (
     <div className={styles.anatomySection}>
       <div className={styles.anatomyContent}>
         <div className={styles.humanBody}>
-          <div className={styles.bodyShape}>
-            <div className={`${styles.bodyPart} ${styles.head}`}></div>
-            <div className={`${styles.bodyPart} ${styles.chest}`}></div>
-            <div className={`${styles.bodyPart} ${styles.torso}`}></div>
-            <div className={`${styles.bodyPart} ${styles.legs}`}></div>
-          </div>
-          
-          <div className={`${styles.healthIndicator} ${styles.heartIndicator}`}>
-            ❤️ Healthy Heart
-          </div>
-          <div className={`${styles.healthIndicator} ${styles.lungsIndicator}`}>
-            🫁 Lungs
-          </div>
-          <div className={`${styles.healthIndicator} ${styles.teethIndicator}`}>
-            🦷 Teeth
-          </div>
-          <div className={`${styles.healthIndicator} ${styles.boneIndicator}`}>
-            🦴 Bone
-          </div>
+          <img
+            src={Human}
+            alt="Human Anatomy"
+            className={styles.humanImage}
+          />
         </div>
       </div>
-      
-      <button className={styles.healthyLogButton}>
-        Healthy Log
-      </button>
     </div>
   );
 };
